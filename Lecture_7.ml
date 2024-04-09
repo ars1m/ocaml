@@ -24,7 +24,7 @@ let t=
             Node(7,Leaf,Leaf)));;
 
 let rec sum = function
-  |Leaf -> 0
+  |Leaf -> 0  (* Base Case -> Returns 0 when it reaches a leaf *)
   |Node (node,left, right) -> node + sum left + sum right;;
 
 sum t;;
