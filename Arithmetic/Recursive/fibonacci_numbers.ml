@@ -5,3 +5,6 @@ let rec fibonacci n =
     fibonacci (n - 1) + fibonacci (n - 2);;
 
 fibonacci 5;;
+let arsim n list =
+  match list with 
+  | _ -> 
