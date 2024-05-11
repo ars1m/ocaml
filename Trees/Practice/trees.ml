@@ -2,27 +2,10 @@ type 'a tree =
   |Leaf
   |Node of 'a * 'a tree * 'a tree;;
 
-let t =
-  Node(4,
-       Node(2,
-            Node(1, Leaf, Leaf),
-            Node(3, Leaf, Leaf)),
-       Node(5,
-            Node(6, Leaf, Leaf),
-            Node(7, Leaf, Leaf)));;
-(* Make this tree bigger *)
-let tree_2 =
-  Node(4,
-       Node(2,
-            Node(4,
-                 Node(1, Leaf, Leaf),
-                 Node(3, Leaf, Leaf)),
-            Node(5,
-                 Node(6, Leaf, Leaf),
-                 Node(7, Leaf, Leaf))),
-       Node(5,
-            Node(6, Leaf, Leaf),
-            Node(7, Leaf, Leaf)));;
+let t = Node(1,
+          Node(7,
+          )
+          Node(9,)
 
 let rec amount_of_node = function
   | Leaf -> 0
