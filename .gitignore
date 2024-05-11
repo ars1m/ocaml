@@ -1,0 +1,9 @@
+
+# Images
+*.jpg
+*.png
+*.gif
+*.svg
+
+# VS Code settings
+.vscode/
