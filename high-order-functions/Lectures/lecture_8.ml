@@ -3,9 +3,8 @@ type 'a tree =
   |Node of 'a * 'a tree * 'a tree
 let rec map_tree f = function 
   |Leaf -> Leaf
-  |Node (v,l,r) -> Node(f v, map_tree f l, map_tree f r)
-                     
-                     
+  |Node (v,l,r) -> Node(f v, map_tree f l, map_tree f r);;
+
 let t1= Node(3, Node( 2, Leaf, Leaf), Node (5 , Leaf , Leaf));;
 map_tree(fun x-> x * x) t1
   
@@ -26,4 +25,4 @@ map (fun x-> x ^ " UNT") ["1 ";"2"];;
 map double [1;4;5];;
 map square [4;5;6];;
 map (fun x -> square(double x))[2;4;5;6];;
-map (fun x -> (2 * x) * (2 * x))[2;4;5;6];;
+map (fun x -> (2 * x) * (2 * x))[2;4;5;6];;     

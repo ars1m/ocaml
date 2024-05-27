@@ -14,7 +14,7 @@ let t =
        Node(2,
             Node(1, Leaf, Leaf),
             Node(3, Leaf, Leaf)),
-       Node(5,
+        Node(5,
             Node(6, Leaf, Leaf),
             Node(7, Leaf, Leaf)));;
 
